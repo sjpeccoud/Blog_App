@@ -24,5 +24,8 @@
 </table>
 
 <p>
-	<%= link_to 'Create new Article', new_article_path %>
+	<%= button_to 'Create new Article', new_article_path, method: :get %>
 </p>
+
+<%= link_to 'Home Page', root_path %> | 
+<%= link_to 'About Page', about_path %>
