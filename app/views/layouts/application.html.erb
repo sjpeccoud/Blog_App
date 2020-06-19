@@ -11,16 +11,10 @@
 
   <body class="d-flex flex-column">
     <%= render 'layouts/navbar' %>
-    <%= render 'layouts/messages' %>
     <div id="page-content">
+      <%= render 'layouts/messages' %>
       <%= yield %>
     </div>
-    <footer id="sticky-footer" class="py-4 bg-dark text-white">
-      <div class="container text-center">
-        <small>
-          Copyright &copy; <%= link_to "GenoFAB", "https://genofab.com", class:"text-white" %>
-        </small>
-      </div>
-  </footer>
+    <%= render 'layouts/footer' %>
   </body>
 </html>
