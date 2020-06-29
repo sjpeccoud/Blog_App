@@ -14,7 +14,7 @@ class ArticlesController < ApplicationController
 
 	def create
 		@article = Article.new(article_params)
-		@article.user = User.first
+		@article.user = current_user
 
 		if @article.save
 			# must to enable flash in application.html.erb to view flash message
