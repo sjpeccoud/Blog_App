@@ -30,6 +30,7 @@
               <%= link_to "Edit your profile", edit_user_path(current_user), class: "dropdown-item" if logged_in? %>
               <div class="dropdown-divider"></div>
               <%= link_to "Logout", login_path, class: "dropdown-item", method: :delete %>
+              <%= link_to "Delete account", user_path(current_user), class: "dropdown-item text-danger", method: :delete, data: { confirm: "Are you sure you want to delete your account and all associated articles?" } %>
             </div>
           </li>
         <% else %>
