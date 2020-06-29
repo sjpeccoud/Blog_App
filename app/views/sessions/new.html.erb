@@ -1,4 +1,4 @@
-<h1 class="text-center mt-4">Log in to the Blog</h1>
+<h1 class="text-center mt-4">Login</h1>
 
 <div class="container">
 	<div class="row justify-content-center">
@@ -24,8 +24,9 @@
 
 			<% end %>
 		</div>
-		<div class="mb-3">
-			<%= link_to '[ Cancel and return to article listings ]', articles_path, class: "text-success" %>
-		</div>
 	</div>
+</div>
+
+<div class="mb-3 text-center">
+	<%= link_to 'Don\'t have an account? Sign up', signup_path, class: "text-success" %>
 </div>
